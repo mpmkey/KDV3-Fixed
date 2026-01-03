@@ -12,7 +12,7 @@ local function load(name, url)
     local wrap = {}
     if not isfile(name) then
         local full = game:HttpGet(url)
-        writefile(name, full)
+        writefile(name,full)
         local asset = getcustomasset(name)
 
         local a = InsertService:LoadLocalAsset(asset)
